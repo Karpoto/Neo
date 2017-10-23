@@ -1,0 +1,54 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="keyword" content="drupal,theme,gci16">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Les fonts ici -->
+	<!-- Le CSS là -->
+</head>
+
+
+<body>
+	<header>
+		<div class="entete">
+			{{ page.header }}
+<!--			{% if page.mainMenu %} -->
+				<nav>
+					{{ page.mainMenu }}
+				</nav>
+<!--		{% end if %} -->
+		</div>
+	</header>
+	<section>
+	<div class="corps">
+<!--	{% if page.highlighted %} -->
+			<aside class="message">
+				{{ page.highlighted }}
+			</aside>
+<!--	{% end if %} -->
+<!--	{% if page.leftside %} -->
+			<aside class="colonneGauche">
+				{{ page.leftside }}
+			</aside>
+<!--	{% end if %} -->
+<!--	{% if page.rightside %} -->
+			<aside class="colonneDroite">
+				{{ page.rightside }}
+			</aside>
+<!--	{% end if %} -->
+
+
+		<main class="corps">
+				{{ page.content }}
+		</article>
+	</div>
+	</section>
+	<footer>
+		<div class="pied">
+			{{page.footer}}
+		</div>
+	</footer>
+</body>
+
+</html>
