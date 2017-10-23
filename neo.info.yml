@@ -1,0 +1,15 @@
+name: Neo
+type: theme
+description: Drupal Theme brought to you by Karpo
+core: 8.x
+libraries:
+ - themeNeo/global-css
+ - themeNeo/global-js
+
+regions:
+	header: En-tête
+	content: Corps
+	highlighted: Message
+	leftside: Colonne gauche
+	rightside: Colonne droite
+	footer: Pied de page
